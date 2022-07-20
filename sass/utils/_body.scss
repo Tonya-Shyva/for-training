@@ -1,0 +1,12 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: $primary-text-color;
+  background-color: $primary-background-color;
+
+  // -----работает со скриптом-----------
+  &.modal-open {
+    overflow-y: hidden;
+  }
+}

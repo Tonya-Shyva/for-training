@@ -1,0 +1,61 @@
+.soc-list {
+  @extend %list;
+
+  display: flex;
+  justify-content: center;
+}
+
+.soc-list__item {
+  display: block;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.soc-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  border: none;
+  justify-content: center;
+  align-items: center;
+  outline: transparent;
+
+  transition: background-color $transition-settings;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  &--grey {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.soc-link__icon {
+  width: 20px;
+  height: 20px;
+
+  &--white {
+    fill: #ffffff;
+  }
+}
+
+.soc-link__icon--grey {
+  fill: #afb1b8;
+  transition: fill $transition-settings;
+
+  .soc-link:hover &,
+  .soc-link:focus & {
+    fill: #ffffff;
+  }
+}

@@ -1,0 +1,61 @@
+.portfolio-container {
+  justify-content: center;
+  align-items: center;
+}
+.filter-list {
+  @extend %list;
+
+  display: flex;
+  column-gap: 8px;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    row-gap: 15px;
+
+    justify-content: left;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.filter-list__button {
+  height: 38px;
+
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
+
+  cursor: pointer;
+  border: 0px;
+  border-radius: 4px;
+
+  transition: color $transition-settings, background-color $transition-settings,
+    filter $transition-settings;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: #ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,19 @@
+.order-form {
+  width: 100%;
+  padding: 40px;
+}
+
+.order-form__head {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
+}
