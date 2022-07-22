@@ -4,3 +4,21 @@
   gap: 30px;
   list-style: none;
 }
+
+@mixin btn--white {
+  // width: 160px;
+  // height: 40px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  // font-family: inherit;
+  // font-weight: 600;
+  // font-size: 12px;
+  // line-height: 1.33;
+  // letter-spacing: 0.09em;
+  transition: background-color 300ms linear, color 300ms linear;
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--main-btn-color);
+  }
+}
