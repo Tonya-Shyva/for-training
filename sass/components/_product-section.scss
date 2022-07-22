@@ -196,12 +196,12 @@
   }
 }
 
-.products__card--front {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+// .products__card--front {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
 
 .products__title {
   margin: 0;
@@ -269,9 +269,12 @@
   }
 }
 
-// .products__card {
-//   position: relative;
-// }
+.products__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .icon-arrow-right {
   display: block;
