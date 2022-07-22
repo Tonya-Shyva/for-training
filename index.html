@@ -852,62 +852,76 @@
       <!-- Продукты -->
       <section class="products section">
         <div class="container">
-          <p class="products-pre-title" lang="en">100% natural</p>
-          <h2 class="products__head" lang="en">products</h2>
+          <p class="products-pre-title">100% natural</p>
+          <h2 class="products__head">products</h2>
           <ul class="products__list">
             <li class="products__item">
               <div class="products__card products__icon-ice-cream">
-                <!-- <div class="products__card--front products__fliper"> -->
-                <h3 class="products__title" lang="en">ice cream</h3>
-                <p class="products__description" lang="en">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et. dolore magna aliqua facilisis.
+                <h3 class="products__title">ice cream</h3>
+                <p class="products__description products__description--height">
+                  Our ice cream made from cream, milk, sugar, flavorings with the addition of
+                  toppings, fruits and nuts.
                 </p>
-                <button class="products__btn" type="button">
+                <label for="pseudoBtn" class="products__btn">
                   <svg class="icon-arrow-right">
                     <use href="./images/arrow-right-sprite.svg#arrow-right"></use>
                   </svg>
-                </button>
-                <!-- </div> -->
-                <!-- <div class="products__card--back products__fliper">
-                  <p class="products__description" lang="en">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et. dolore magna aliqua facilisis.
-                  </p>
-                </div> -->
+                </label>
+                <input type="checkbox" id="pseudoBtn" />
+                <div class="products__article">
+                  <p class="products__text">Nutritional properties, 100g</p>
+                  <ul class="products__consist-list">
+                    <li>
+                      <p class="products__text">calories 119.00kcal</p>
+                    </li>
+                    <li><p class="products__text">Squirrels 1.51g</p></li>
+                    <li><p class="products__text">Fats 8.00g</p></li>
+                    <li><p class="products__text">Carbohydrates 10.66g</p></li>
+                  </ul>
+                </div>
               </div>
             </li>
 
             <li class="products__item">
               <div class="products__card products__icon-ice-coffee">
-                <!-- <div class="products__card--front products__fliper"> -->
                 <h3 class="products__title">ice coffee</h3>
-                <p class="products__description" lang="en">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et. dolore magna aliqua facilisis.
+                <p class="products__description">
+                  Ice coffee made from ice cream and natural Brasilian coffee Arabica variety, with
+                  the addition of toppings and ice.
                 </p>
-                <button class="products__btn" type="button">
+                <label for="pseudoBtn2" class="products__btn">
                   <svg class="icon-arrow-right">
                     <use href="./images/arrow-right-sprite.svg#arrow-right"></use>
                   </svg>
-                </button>
-                <!-- </div> -->
+                </label>
+                <input type="checkbox" id="pseudoBtn2" />
+                <div class="products__article">
+                  <p class="products__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et. dolore magna aliqua facilisis.
+                  </p>
+                </div>
               </div>
             </li>
             <li class="products__item">
               <div class="products__card products__icon-milkshakes">
-                <!-- <div class="products__card--front products__fliper"> -->
                 <h3 class="products__title">milkshakes</h3>
-                <p class="products__description" lang="en">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et. dolore magna aliqua facilisis.
+                <p class="products__description">
+                  Our milkshakes made from ice cream, milk, flavorings with the addition of
+                  toppings, fruits. With love and passion!
                 </p>
-                <button class="products__btn" type="button">
+                <label for="pseudoBtn3" class="products__btn">
                   <svg class="icon-arrow-right">
                     <use href="./images/arrow-right-sprite.svg#arrow-right"></use>
                   </svg>
-                </button>
-                <!-- </div> -->
+                </label>
+                <input type="checkbox" id="pseudoBtn3" />
+                <div class="products__article">
+                  <p class="products__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et. dolore magna aliqua facilisis.
+                  </p>
+                </div>
               </div>
             </li>
           </ul>
@@ -1013,7 +1027,7 @@
     </footer>
 
     <!-- ----- Бэкдроп с модалкой----- -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal-products>
       <div class="modal">
         <button class="btn-close" data-modal-close>
           <svg class="btn-close__icon" width="11px" height="11px">
@@ -1102,5 +1116,6 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/products-modal.js"></script>
   </body>
 </html>
