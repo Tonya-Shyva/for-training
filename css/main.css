@@ -1327,6 +1327,18 @@ input[type='checkbox']:checked ~ .products__article {
   margin-top: 25px;
 }
 
+.icon-arrow-up {
+  display: none;
+}
+
+input[type='checkbox']:checked ~ .icon-arrow-open {
+  display: none;
+}
+
+input[type='checkbox']:checked ~ .icon-arrow-up {
+  display: block;
+}
+
 .products__consist-list {
   text-align: left;
   padding-left: 10px;
