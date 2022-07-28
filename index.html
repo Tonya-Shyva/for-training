@@ -850,29 +850,75 @@
       </section>
 
       <!-- Продукты -->
-      <section class="products section">
+      <section class="products section" id="products_section">
         <div class="container">
           <p class="products-pre-title">100% natural</p>
-          <h2 class="products__head">products</h2>
+          <h2 class="section__title">products</h2>
           <ul class="products__list">
             <li class="products__item">
               <div class="products__card products__icon-ice-cream">
                 <h3 class="products__title">ice cream</h3>
                 <p class="products__description products__description--height">
                   Our ice cream made from cream, milk, sugar, flavorings with the addition of
-                  toppings, fruits and nuts.
+                  toppings, fruits and nuts.Find your own to taste!
                 </p>
-                <label for="pseudoBtn" class="products__btn">
-                  <svg class="icon-arrow-right">
+                <button
+                  class="products__btn1"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="products_article1"
+                >
+                  <svg class="icon-arrow">
                     <use
                       class="icon-arrow-open"
-                      href="./images/arrows-sprite.svg#arrow-right"
+                      href="./images/arrows-sprite.svg#arrow-down"
                     ></use>
-                    <!-- <use class="icon-arrow-up" href="./images/arrows-sprite.svg#arrow-up"></use> -->
+                    <use class="icon-arrow-close" href="./images/arrows-sprite.svg#arrow-up"></use>
                   </svg>
+                </button>
+                <div id="products_article1" class="products__article1">
+                  <p class="products__text">Nutritional properties, 100g</p>
+                  <ul class="products__consist-list">
+                    <li>
+                      <p class="products__text">calories 119.00kcal</p>
+                    </li>
+                    <li><p class="products__text">Squirrels 1.51g</p></li>
+                    <li><p class="products__text">Fats 8.00g</p></li>
+                    <li><p class="products__text">Carbohydrates 10.66g</p></li>
+                  </ul>
+                </div>
+                <!-- <label for="pseudoBtn" class="products__btn">
+                  
                 </label>
-                <input type="checkbox" id="pseudoBtn" />
-                <div class="products__article">
+                <input type="checkbox" id="pseudoBtn" /> -->
+                <!-- <div class="products__article">
+                  
+                </div> -->
+              </div>
+            </li>
+
+            <li class="products__item">
+              <div class="products__card products__icon-ice-coffee">
+                <h3 class="products__title">ice coffee</h3>
+                <p class="products__description">
+                  Ice coffee made from ice cream and natural Brasilian coffee Arabica variety, with
+                  the addition of toppings and ice.Find your own to taste!
+                </p>
+                <button
+                  class="products_btn2"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="products__article2"
+                >
+                  <svg class="icon-arrow">
+                    <use
+                      class="icon-arrow-open"
+                      href="./images/arrows-sprite.svg#arrow-down"
+                    ></use>
+                    <use class="icon-arrow-close" href="./images/arrows-sprite.svg#arrow-up"></use>
+                  </svg>
+                </button>
+                <div id="products_article2" class="products__article2">
                   <p class="products__text">Nutritional properties, 100g</p>
                   <ul class="products__consist-list">
                     <li>
@@ -885,52 +931,135 @@
                 </div>
               </div>
             </li>
-
-            <li class="products__item">
-              <div class="products__card products__icon-ice-coffee">
-                <h3 class="products__title">ice coffee</h3>
-                <p class="products__description">
-                  Ice coffee made from ice cream and natural Brasilian coffee Arabica variety, with
-                  the addition of toppings and ice.
-                </p>
-                <label for="pseudoBtn2" class="products__btn">
-                  <svg class="icon-arrow-right">
-                    <use href="./images/arrows-sprite.svg#arrow-right"></use>
-                  </svg>
-                </label>
-                <input type="checkbox" id="pseudoBtn2" />
-                <div class="products__article">
-                  <p class="products__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et. dolore magna aliqua facilisis.
-                  </p>
-                </div>
-              </div>
-            </li>
             <li class="products__item">
               <div class="products__card products__icon-milkshakes">
                 <h3 class="products__title">milkshakes</h3>
                 <p class="products__description">
                   Our milkshakes made from ice cream, milk, flavorings with the addition of
-                  toppings, fruits. With love and passion!
+                  toppings, fruits. With love and passion!Find your taste!
                 </p>
-                <label for="pseudoBtn3" class="products__btn">
-                  <svg class="icon-arrow-right">
-                    <use href="./images/arrows-sprite.svg#arrow-right"></use>
+                <!-- <label for="pseudoBtn3" class="products__btn" tabindex="1">
+            <svg class="icon-arrow-right">
+              <use href="./images/arrows-sprite.svg#arrow-right"></use>
+            </svg>
+          </label>
+          <input type="checkbox" id="pseudoBtn3" /> -->
+                <button
+                  class="products_btn3"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="products__article3"
+                >
+                  <svg class="icon-arrow">
+                    <use
+                      class="icon-arrow-open"
+                      href="./images/arrows-sprite.svg#arrow-down"
+                    ></use>
+                    <use class="icon-arrow-close" href="./images/arrows-sprite.svg#arrow-up"></use>
                   </svg>
-                </label>
-                <input type="checkbox" id="pseudoBtn3" />
-                <div class="products__article">
-                  <p class="products__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et. dolore magna aliqua facilisis.
-                  </p>
+                </button>
+                <div id="products_article3" class="products__article3">
+                  <p class="products__text">Nutritional properties, 100g</p>
+                  <ul class="products__consist-list">
+                    <li>
+                      <p class="products__text">calories 119.00kcal</p>
+                    </li>
+                    <li><p class="products__text">Squirrels 1.51g</p></li>
+                    <li><p class="products__text">Fats 8.00g</p></li>
+                    <li><p class="products__text">Carbohydrates 10.66g</p></li>
+                  </ul>
                 </div>
               </div>
             </li>
           </ul>
         </div>
       </section>
+
+      <!-- ----Преимущества -->
+      <section class="advantages" id="advantages">
+        <div class="container">
+          <h2 class="visually-hidden">Our advantages</h2>
+          <div class="advantages__list list">
+            <div class="advantages__item">
+              <div class="advantages__meta">721</div>
+              <p class="advantages__text">
+                Liters of milk we get per day to make our products that you love so much!
+              </p>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__meta">16kg</div>
+              <p class="advantages__text">Of ice cream we sell every day.</p>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__meta">84</div>
+              <p class="advantages__text">
+                Different flavors of ice cream. You can keep an experiment and try to mix any of
+                them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------- Слайдер------------ -->
+      <section class="container reviews section">
+        <h2 class="reviews__title">Customer Reviews</h2>
+
+        <div class="reviews__slider">
+          <div class="reviews__item">
+            <img src="./images/reviews/photo1-1x.jpg" alt="photo1" class="reviews__photo" />
+            <div class="reviews__wrap">
+              <div class="reviews__row">
+                <p class="reviews__text">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                  hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+              </div>
+            </div>
+
+            <div class="reviews__dot"></div>
+
+            <p class="reviews__name">Emily, Los Angeles</p>
+          </div>
+
+          <div class="reviews__item">
+            <img src="./images/reviews/photo2-1x.jpg" alt="photo2" class="reviews__photo" />
+            <div class="reviews__wrap">
+              <p class="reviews__text">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+
+            <div class="reviews__dot"></div>
+
+            <p class="reviews__name">Emily, Los Angeles</p>
+          </div>
+
+          <div class="reviews__item">
+            <img src="./images/reviews/photo3-1x.jpg" alt="photo3" class="reviews__photo" />
+            <div class="reviews__wrap">
+              <p class="reviews__text">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+
+            <div class="reviews__dot"></div>
+
+            <p class="reviews__name">Emily, Los Angeles</p>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="c-container__career">
+        <div class="c-career">
+          <div class="c-career__counter">
+            <div class="c-career__info">
+              <div class="c-career__info-item">
+                <div class="c-career__number" id="counter_1">4053</div>
+                <p class="c-career__text-info c-career__text-info--swap">[ Выпускников GoIt ]</p></div><div class="c-career__info-item"><div class="c-career__number" id="students">6125</div><p class="c-career__text-info">[ Студентов ]</p></div><div class="c-career__info-item"><div class="c-career__number" id="sal">750$</div><p class="c-career__text-info c-career__text-info--swap">[ Средняя ЗП выпускников ]</p></div></div>
     </main>
 
     <!-- Подвал -->
@@ -1118,8 +1247,15 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/products-modal.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="./js/clik-btn-products.js"></script>
+    <script type="text/javascript" src="https://goit.ua/wp-content/themes/2/js/countUp.min.js" id="countUp-js"></script>
+    <script src="./js/counter.js"></script> -->
   </body>
 </html>
